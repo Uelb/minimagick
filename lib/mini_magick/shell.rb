@@ -17,7 +17,7 @@ module MiniMagick
         fail MiniMagick::Error, "`#{command.join(" ")}` failed with error:\n#{stderr}"
       end
 
-      $stderr.print(stderr) unless options[:stderr] == false
+      #$stderr.print(stderr) unless options[:stderr] == false
 
       [stdout, stderr, status]
     end
